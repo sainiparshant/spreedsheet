@@ -1,7 +1,7 @@
 
 
 import type React from "react"
-import { useMemo, useState, useEffect } from "react"
+import { useMemo, useEffect } from "react"
 import {
   useReactTable,
   getCoreRowModel,
@@ -18,24 +18,13 @@ import { GripVertical } from "lucide-react"
 
 interface DataTableProps {
   data: TaskData[]
-  onTableReady?: (table: any) => void
+  onTableReady?: (table: string | number) => void
 }
 
 const columnHelper = createColumnHelper<TaskData>()
 
 export const DataTable: React.FC<DataTableProps> = ({ data, onTableReady }) => {
-  const statusOptions: FilterOption[] = [
-    { value: "in-progress", label: "In Progress" },
-    { value: "need to start", label: "Need to Start" },
-    { value: "complete", label: "Complete" },
-    { value: "blocked", label: "Blocked" },
-  ]
 
-  const priorityOptions: FilterOption[] = [
-    { value: "High", label: "High" },
-    { value: "Medium", label: "Medium" },
-    { value: "Low", label: "Low" },
-  ]
 
   const columns = useMemo(
     () => [

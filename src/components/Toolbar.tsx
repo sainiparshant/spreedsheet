@@ -6,7 +6,7 @@ import { Button } from "./ui/Button"
 import { Input } from "./ui/Input"
 
 interface ToolbarProps {
-  table?: any
+  table?: unknown
   onHideFields: () => void
   onSort: () => void
   onFilter: () => void
@@ -18,7 +18,6 @@ interface ToolbarProps {
 }
 
 export const Toolbar: React.FC<ToolbarProps> = ({
-  table,
   onHideFields,
   onSort,
   onFilter,

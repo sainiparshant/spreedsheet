@@ -17,7 +17,7 @@ const tabs: TabData[] = [
 
 function App() {
   const [activeTab, setActiveTab] = useState("all")
-  const [tableInstance, setTableInstance] = useState<any>(null)
+  const [tableInstance, setTableInstance] = useState<unknown>(null)
 
   // Toolbar handlers
   const handleHideFields = () => {
