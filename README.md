@@ -1,5 +1,31 @@
 # React + TypeScript + Vite
 
+# React Spreadsheet App
+
+A spreadsheet-style data table built with React, TypeScript, and Tailwind CSS. It mimics common spreadsheet features like sorting, filtering, resizing columns, and keyboard navigation.
+
+---
+
+## Features
+
+- Dynamic columns with customizable headers and cells  
+- Sorting and filtering capabilities  
+- Column resizing with drag handles  
+- Keyboard navigation for cell focus and movement  
+- Custom badges for status and priority display  
+- Responsive and clean UI using Tailwind CSS  
+
+---
+
+## Setup
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/yourusername/react-spreadsheet-app.git
+cd react-spreadsheet-app
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
