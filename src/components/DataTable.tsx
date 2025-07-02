@@ -8,6 +8,7 @@ import {
   getSortedRowModel,
   flexRender,
   createColumnHelper,
+  type Table,
 } from "@tanstack/react-table"
 import type { TaskData } from "../types"
 import { StatusBadge } from "./StatusBadge"
@@ -16,9 +17,10 @@ import { ArrowUpDown } from "lucide-react"
 import { useKeyboardNavigation } from "../hooks/useKeyboardNavigation"
 import { GripVertical } from "lucide-react"
 
+
 interface DataTableProps {
   data: TaskData[]
-  onTableReady?: (table: string | number) => void
+  onTableReady?: (table: Table<TaskData>) => void
 }
 
 const columnHelper = createColumnHelper<TaskData>()
